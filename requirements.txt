@@ -1,0 +1,19 @@
+# Versions used on Google Colab (2026); pin as needed for exact reproduction.
+torch
+torchvision
+timm
+torchmetrics
+faster-coco-eval
+xgboost
+scikit-learn
+scikit-image
+opencv-python
+numpy
+pandas
+scipy
+matplotlib
+seaborn
+pillow
+tqdm
+# notebook 04 (CNN + GLCM baselines) only
+tensorflow

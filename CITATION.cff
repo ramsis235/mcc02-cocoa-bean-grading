@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+message: "If you use this code or the MCC-02 dataset, please cite them as below."
+title: "MCC-02 cocoa bean grading: code"
+type: software
+license: MIT
+repository-code: "https://github.com/ramsis235/mcc02-cocoa-bean-grading"
+authors:
+  - family-names: Siswanto
+    given-names: Rahmat
+    affiliation: "Universiti Malaysia Kelantan; Universitas Muhammadiyah Palopo"
+  - family-names: "Reddy C"
+    given-names: "Kishor Kumar"
+    affiliation: "Stanley College of Engineering and Technology for Women"
+  - family-names: Santoso
+    given-names: Hadi
+    affiliation: "Universitas Mercu Buana"
+  - family-names: Adli
+    given-names: "Hasyiya Karimah"
+    affiliation: "Universiti Malaysia Kelantan"
+references:
+  - type: dataset
+    title: "MCC-02: A whole-bean image dataset for four-class cocoa bean quality grading, with a field evaluation set"
+    version: "1.0"
+    doi: "10.5281/zenodo.23212578"
+    publisher:
+      name: Zenodo
+    authors:
+      - family-names: Siswanto
+        given-names: Rahmat
+      - family-names: "Reddy C"
+        given-names: "Kishor Kumar"
+      - family-names: Santoso
+        given-names: Hadi
+      - family-names: Adli
+        given-names: "Hasyiya Karimah"
