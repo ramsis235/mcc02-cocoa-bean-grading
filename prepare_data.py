@@ -16,7 +16,7 @@ and set BASE_DIR in the notebooks to <dataset folder>. The resulting layout is
 
 Use --link to hard-link the split copies instead of copying them (same file system only).
 """
-import argparse, csv, json, os, shutil, zipfile
+import argparse, csv, glob, json, os, shutil, zipfile
 
 
 def extract(zip_path, member_prefix, dest, strip):
@@ -40,7 +40,10 @@ def main():
     os.makedirs(out, exist_ok=True)
 
     print('Extracting laboratory images ...')
-    extract(f'{z}/MCC-02_lab_images.zip', 'MCC-02_lab_images/', f'{out}/images', 'MCC-02_lab_images/')
+    parts = sorted(glob.glob(f'{z}/MCC-02_lab_images*.zip'))
+    assert parts, 'no MCC-02_lab_images*.zip found'
+    for part in parts:
+        extract(part, 'MCC-02_lab_images/', f'{out}/images', 'MCC-02_lab_images/')
 
     coco = json.load(open(f'{z}/MCC-02_annotations_coco.json'))
     for im in coco['images']:
