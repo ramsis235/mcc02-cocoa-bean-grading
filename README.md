@@ -4,7 +4,7 @@
 
 Training and evaluation code for the article
 
-> Siswanto R, Reddy C KK, Santoso H, Adli HK. *Backbone decoupling improves field generalisation of two-stage cocoa bean quality grading.* Applied Intelligence (under review).
+> Siswanto R, Reddy C KK, Santoso H, Adli HK. *Backbone decoupling improves field generalisation of two-stage cocoa bean quality grading.* Manuscript in preparation; citation details will be added on publication.
 
 The framework grades whole cocoa beans into four classes (Fermented, Unfermented, Broken, Moldy) in two stages: a RetinaNet detector with anchors optimised by differential evolution, followed by a Swin-Tiny classifier with multi-scale (EMDMFM) and self-attention (SAFM) fusion, with optional XGBoost and isotonic-calibration stages. Twenty configurations in three ablation chains are trained on MCC-02 and evaluated on laboratory test crops and on smartphone images from working post-harvest facilities.
 
